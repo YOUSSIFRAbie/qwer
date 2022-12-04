@@ -1,0 +1,314 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    align-items: center;
+    position: fixed;
+    z-index: 300;
+    text-transform: capitalize;
+}
+.logo{
+    width: 90px;
+    height: 30px;
+    color: black;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    border-radius: 13px;
+}
+nav{
+    padding: 20px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+    color: blue;
+}
+header nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    list-style-type: none;
+    width: 65px;
+    height: 30px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 1s;
+}
+nav li:hover{
+    border-radius: 10px;
+    background-color: rgba(124, 124, 124, 0.801);
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.section1{
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/backSection.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.aboutMe{
+    margin-left: 80px;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #01e1ff;
+    display: flex;
+    flex-direction: column;
+    line-height: 100px;
+}
+.spa1{
+    font-size: 100px;
+}
+.spa2{
+    font-size: 25px;
+}
+.spa3{
+    font-size: 65.5px;
+}
+.btn1{
+    border: none;
+    width: 180px;
+    height: 50px;
+    background-color: #0075ff;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 30px;
+    border-radius: 15px;
+    transition: 1s;
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+}
+/* .btn1:hover{
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+} */
+.certifecates{
+    margin-top: 120px;
+    background-color: #0075ff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.certife1{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.certife1 img{
+    width: 40%;
+    transition: 1s;
+}
+/* .certife1 img:hover{
+    width: 50%;
+} */
+.certife2{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.certife2 img{
+    width: 40%;
+    transition: 1s;
+}
+/* .certife2 img:hover{
+    width: 50%;
+} */
+
+.certife3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.certife3 img{
+    width: 40%;
+    transition: 1s;
+}
+/* .certife3 img:hover{
+    width: 50%;
+} */
+.scills{
+    margin-top: 30px;
+    width: 100%;
+    height: 350px;
+    background-color: #0075ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.scills .cards{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.scills .card{
+    width: 150px;
+    height: 220px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: 1s;
+}
+.scills .card:hover{
+    width: 180px;
+    height: 250px;   
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #0075ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact .contactCard{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+.contact .contactCard:hover{
+    width: 250px;
+    height: 400px;
+}
+/* .contact .contactCard:hover + .contact{
+    height: 150vh;
+    flex-direction: column;
+} */
+footer{
+    width: 100%;
+    height: 100px;
+    color: white;
+    background-color:#022c5c;
+    margin-top: 5px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:915px) {
+    *{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    header{
+        flex-direction: row;
+        padding: auto;
+        font-size: 13px;
+    }
+    nav{
+        padding: 10px;
+        flex-wrap: wrap;
+        margin-right: 10px;
+    }
+    .logo{
+        margin-left: 15px;
+    }
+    .certife1 img{
+        margin-top: 10px;
+        width: 80%;
+    }
+    .certife2 img{
+        margin-top: 10px;
+        width: 80%;
+    }
+    .certife3 img{
+        margin-top: 10px;
+        width: 80%;
+    }
+    .scills{
+        height: 600px;
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .scills .card{
+        margin-top: 10px;
+    }
+    .contact .contactCard{
+        width: 180px;
+        height: 250px;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .spa1{
+        margin-top: 40px;
+    }
+    .spa3{
+        font-size: 50px;
+    }
+    header nav li{
+        width: 50px;
+        margin-left: 10px;
+    }
+    @media (max-width:760px) {
+        .spa3{
+            font-size: 50px;
+        }
+        header nav li{
+            width: 50px;
+            margin-left: 10px;
+        }
+    }
+    @media (max-widtc:375px) {
+        .scills{
+            height: 150vh;
+        }
+        .scills .cards{
+            flex-direction: column;
+        }
+        .contact{
+            height: 150vh;
+        }
+        .contact .contactCard{
+            flex-direction: column;
+        }
+    }
+}
